@@ -30,7 +30,7 @@
   align-items: center;
   height: 100vh;
   min-width: 100vw;
-  background-color: #c095e6;
+  background-color: #000;
   overflow: hidden;
   z-index: 999;
 }

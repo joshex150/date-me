@@ -53,23 +53,41 @@ const home = () => {
     const suffix = getOrdinalSuffix(updatedChoice);
     if (updatedChoice === 5 || updatedChoice % 5 === 0) {
       toast.error(
-        `haha, you've tried ${updatedChoice} times. Aren't you tired?`
+        `haha, you've tried ${updatedChoice} times. Aren't you tired?`,
+        {
+          icon: "👏",
+          style: {
+            background: "#333",
+            color: "#fff",
+          },
+        }
       );
       return;
     }
     if (updatedChoice === 1) {
-      toast.error(`haha, you never had a choice`);
+      toast.error(`haha, you never had a choice`, {
+        icon: "👏",
+        style: {
+          background: "#333",
+          color: "#fff",
+        },
+      });
     } else {
       toast.error(
-        `haha, for the ${updatedChoice}${suffix} time you never had a choice`
+        `haha, for the ${updatedChoice}${suffix} time you never had a choice`,
+        {
+          icon: "👏",
+          style: {
+            background: "#333",
+            color: "#fff",
+          },
+        }
       );
     }
   };
 
   return (
     <>
-      {/* Display loader if showLoader is true */}
-
       {showLoader && <Loader />}
       <div
         className="container"
@@ -85,7 +103,7 @@ const home = () => {
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                background-color: #c095e6;
+                background-color: #000;
                 min-width: 100vw;
                 overflow: hidden;
               }
