@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/yes.css";
 import { ImageRem } from "../components";
 
 const yes = () => {

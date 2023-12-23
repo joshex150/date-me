@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../styles/home.css";
 import { useNavigate } from "react-router-dom";
 import { ImageRem, Loader } from "../components";
 import toast from "react-hot-toast";
