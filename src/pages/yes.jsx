@@ -12,7 +12,7 @@ const yes = () => {
           justify-content: center;
           align-items: center;
           height: 100vh;
-          background-color: #9655cf;
+          background-color: #c095e6;
           min-width: 100vw;
           overflow: hidden;
         }

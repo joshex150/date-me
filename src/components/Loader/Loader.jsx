@@ -3,15 +3,12 @@ import "./Loader.css";
 
 const Loader = ({ color = "primary" }) => {
   return (
-    <div className={`lds-roller ${color}`}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className="loader-page">
+      <div className="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };

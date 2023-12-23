@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/home.css";
 import { useNavigate } from "react-router-dom";
-import { ImageRem } from "../components";
+import { ImageRem, Loader } from "../components";
 import toast from "react-hot-toast";
 const home = () => {
   const navigate = useNavigate();
   const [choice, setChoice] = useState(0);
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false); // Hide the loader after 4 seconds
+    }, 4000);
+
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
+  }, []);
+
   const getOrdinalSuffix = (num) => {
     if (num === 0) {
       return ""; // No suffix for zero
@@ -57,15 +67,25 @@ const home = () => {
   };
 
   return (
-    <div className="container">
-      <style>
-        {`
+    <>
+      {/* Display loader if showLoader is true */}
+
+      {showLoader && <Loader />}
+      <div
+        className="container"
+        style={{
+          visibility: !showLoader ? "visible" : "hidden",
+          display: !showLoader ? "block" : "none",
+        }}
+      >
+        <style>
+          {`
             body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                background-color: #9655cf;
+                background-color: #c095e6;
                 min-width: 100vw;
                 overflow: hidden;
               }
@@ -131,38 +151,43 @@ const home = () => {
               }
               
             `}
-      </style>
+        </style>
 
-      <div
-        style={{
-          width: "-webkit-fill-available",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <p className="header_text">Do you wanna go out with me?</p>
-      </div>
-      <div className="gif_container">
-        <ImageRem
-          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
-          alt="Cute animated illustration"
-        />
-      </div>
-      <div className="buttons">
-        <button className="btn" id="yesButton" onClick={() => navigate("/yes")}>
-          Yes
-        </button>
-        <button
-          className="btn"
-          id="noButton"
-          onMouseOver={moveButton}
-          onClick={moveButton}
+        <div
+          style={{
+            width: "-webkit-fill-available",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
-          No
-        </button>
+          <p className="header_text">Do you wanna go out with me?</p>
+        </div>
+        <div className="gif_container">
+          <ImageRem
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+            alt="Cute animated illustration"
+          />
+        </div>
+        <div className="buttons">
+          <button
+            className="btn"
+            id="yesButton"
+            onClick={() => navigate("/yes")}
+          >
+            Yes
+          </button>
+          <button
+            className="btn"
+            id="noButton"
+            onMouseOver={moveButton}
+            onClick={moveButton}
+          >
+            No
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
