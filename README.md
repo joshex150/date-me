@@ -1,8 +1,19 @@
-# React + Vite
+# A 20-Minute Recreational Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [Explore "Be Mine?" here](https://www.that-time.vercel.app)
 
-Currently, two official plugins are available:
+### Screenshots:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Loader Page**
+  ![Loader Page](src/assets/load.png)
+
+- **Landing Page**
+  ![Landing Page](src/assets/pick.png)
+
+- **Sike (No Choice)**
+  ![Sike (No Choice)](src/assets/option.png)
+
+- **Yes Page**
+  ![Yes Page](src/assets/yes.png)
+
+This offers a glimpse into different pages and stages, inviting you to explore its interactive elements.
