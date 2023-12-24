@@ -5,7 +5,7 @@
 ### Screenshots:
 
 - **Loader Page**
-  ![Loader Page](src/assets/load.png)
+  ![Loader Page](public/load.png)
 
 - **Landing Page**
   ![Landing Page](src/assets/pick.png)
