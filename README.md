@@ -8,12 +8,12 @@
   ![Loader Page](public/load.png)
 
 - **Landing Page**
-  ![Landing Page](src/assets/pick.png)
+  ![Landing Page](/public/load.png)
 
 - **Sike (No Choice)**
   ![Sike (No Choice)](https://github.com/joshex150/date-me/blob/main/src/assets/option.png?raw=true)
 
 - **Yes Page**
-  ![Yes Page](src/assets/yes.png)
+  ![Yes Page](/src/assets/yes.png)
 
 This offers a glimpse into different pages and stages, inviting you to explore its interactive elements.
