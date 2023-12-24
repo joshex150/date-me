@@ -50,12 +50,12 @@ const ShowCard = ({ show }) => {
             </span>
           </p>
 
-          <p className="flex justify-between text-xl mb-20">
+          {/* <p className="flex justify-between text-xl mb-20">
             Date:{" "}
             <span className="text-green-500 text-lg pl-4">
               {new Date(show.showtimes[0].startTime).toLocaleString()}
             </span>
-          </p>
+          </p> */}
           <button className="p-[15px 32px] text-[16px] h-[54px] w-[45%] absolute bottom-3 right-3 bg-transparent border-white border hover:bg-white hover:text-black">
             This One
           </button>
