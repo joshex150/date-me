@@ -11,7 +11,7 @@
   ![Landing Page](src/assets/pick.png)
 
 - **Sike (No Choice)**
-  ![Sike (No Choice)](https://github.com/joshex150/date-me/blob/main/src/assets/option.png)
+  ![Sike (No Choice)](https://github.com/joshex150/date-me/blob/main/src/assets/option.png?raw=true)
 
 - **Yes Page**
   ![Yes Page](src/assets/yes.png)
