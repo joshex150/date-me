@@ -23,7 +23,13 @@ const ShowCard = ({ show }) => {
         // Handle successful response
         // For example, you might want to retrieve some data from the response
         const responseData = await response.json();
-        console.log("Received response data:", responseData);
+        toast.error(`alright Izzy, i'll let you know when`, {
+          icon: "👏",
+          style: {
+            background: "#333",
+            color: "#fff",
+          },
+        });
       } else {
         // Handle error response
         throw new Error("Failed to send data");
