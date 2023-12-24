@@ -5,10 +5,10 @@
 ### Screenshots:
 
 - **Loader Page**
-  ![Loader Page](load.png)
+  ![Loader Page](src/assets/load.png)
 
 - **Landing Page**
-  ![Landing Page](assets/pick.png)
+  ![Landing Page](src/assets/pick.png)
 
 - **Sike (No Choice)**
   ![Sike (No Choice)](src/assets/option.png)
