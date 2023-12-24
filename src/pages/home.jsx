@@ -10,7 +10,7 @@ const home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoader(false); // Hide the loader after 4 seconds
-    }, 4000);
+    }, 2000);
 
     return () => clearTimeout(timer); // Cleanup timer on component unmount
   }, []);
@@ -198,7 +198,7 @@ const home = () => {
             className="btn"
             id="noButton"
             onMouseOver={moveButton}
-            onClick={moveButton}
+            // onClick={moveButton}
           >
             No
           </button>
