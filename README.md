@@ -5,15 +5,17 @@
 ### Screenshots:
 
 - **Loader Page**
-  ![Loader Page](src/assets/load.png)
+  <a href="https://github.com/joshex150/date-me/blob/main/public/load.png"><img title="screenshot_04192014_090821" alt="screenshot_04192014_090821" src="https://github.com/joshex150/date-me/blob/main/public/load.png" width="644" height="364" /></a>
 
 - **Landing Page**
-  ![Landing Page](src/assets/pick.png)
+  <a href="https://github.com/joshex150/date-me/blob/main/public/pick.png"><img title="screenshot_04192014_090821" alt="screenshot_04192014_090821" src="https://github.com/joshex150/date-me/blob/main/public/pick.png" width="644" height="364" /></a>
 
 - **Sike (No Choice)**
-  ![Sike (No Choice)](src/assets/option.png)
+
+  <a href="https://github.com/joshex150/date-me/blob/main/public/option.png"><img title="screenshot_04192014_090821" alt="screenshot_04192014_090821" src="https://github.com/joshex150/date-me/blob/main/public/option.png" width="644" height="364" /></a>
 
 - **Yes Page**
-  ![Yes Page](src/assets/yes.png)
+
+  <a href="https://github.com/joshex150/date-me/blob/main/public/yes.png"><img title="screenshot_04192014_090821" alt="screenshot_04192014_090821" src="https://github.com/joshex150/date-me/blob/main/public/yes.png" width="644" height="364" /></a>
 
 This offers a glimpse into different pages and stages, inviting you to explore its interactive elements.
