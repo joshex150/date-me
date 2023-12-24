@@ -6,6 +6,7 @@ const home = () => {
   const navigate = useNavigate();
   const [choice, setChoice] = useState(0);
   const [showLoader, setShowLoader] = useState(true);
+  const [loading, setLoading] = useState();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -82,6 +83,37 @@ const home = () => {
           },
         }
       );
+    }
+  };
+
+  const handleReceipt = async () => {
+    try {
+      setLoading(true); // Assuming setLoading is a function to set loading state to true
+
+      const response = await fetch("https://api-bank-xi.vercel.app/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          answer: "yes",
+        }),
+      });
+
+      if (response.ok) {
+        // Handle successful response
+        // For example, you might want to retrieve some data from the response
+        const responseData = await response.json();
+        console.log("Received response data:", responseData);
+      } else {
+        // Handle error response
+        throw new Error("Failed to send data");
+      }
+    } catch (error) {
+      console.error("Error occurred:", error);
+      // Handle error (e.g., show an error message to the user)
+    } finally {
+      setLoading(false); // Set loading state to false regardless of success or failure
     }
   };
 
@@ -190,7 +222,10 @@ const home = () => {
           <button
             className="btn"
             id="yesButton"
-            onClick={() => navigate("/yes")}
+            onClick={() => {
+              handleReceipt("yes");
+              navigate("/yes");
+            }}
           >
             Yes
           </button>
