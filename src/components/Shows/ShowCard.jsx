@@ -22,7 +22,7 @@ const ShowCard = ({ show }) => {
   return (
     <>
       <div
-        className="flex flex-col lg:min-w-[305px] gap-1 mb-4 border-white border p-2 shadow-sm lg:w-[48%] w-[97%] cursor-pointer min-[750px]:hover:scale-[1.02] duration-150 transition-[transform] relative "
+        className="flex flex-col lg:min-w-[305px] gap-1 mb-4 border-white border p-2 shadow-sm lg:w-[48%] w-[97%] cursor-pointer hover:scale-[1.02] duration-150 transition-[transform] relative "
         onClick={handleReciept}
       >
         <ImageRem
@@ -43,7 +43,7 @@ const ShowCard = ({ show }) => {
               {show?.film?.duration} minutes
             </span>
           </p>
-          <p className="flex justify-between text-xl">
+          <p className="flex justify-between text-xl mb-20">
             Genre:{" "}
             <span className="text-lg">
               {show?.film?.filmGenre.map((genre) => genre.genre)}
