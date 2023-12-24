@@ -178,7 +178,7 @@ const home = () => {
             alignItems: "center",
           }}
         >
-          <p className="header_text">Do you wanna go out with me?</p>
+          <p className="header_text">Do you wanna go on a date with me?</p>
         </div>
         <div className="gif_container">
           <ImageRem
